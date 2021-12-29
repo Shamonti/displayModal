@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <h1>Heading</h1>
+    {% if dataset %}
+    <h1>Show Data</h1>
+    <p>{{dataset}}</p>
+    {%for data in dataset %} {{ data.id}} {{ data.name}} {{ data.email}}
+    {{data.first_name}} {{ data.last_name}} {% endfor %} {% else %}
+    <h1>No Data</h1>
+
+    {% endif %}
+  </body>
+</html>
